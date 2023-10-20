@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Clone</title>
+ <!--  font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- bootstrap-css -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- main-css -->
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-gray">
+  <!-- login -->
+<div class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
+   <!--  heading -->
+   <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+    <h1 class="text-primary fw-bold fs-0">Facebook</h1>
+    <p class="w-75 mx-auto mx-lg-0 fs-4">Facebook helps you connect and share with the people in your life.</p>
+   </div>
+   <!--  form -->
+   <div style="max-width: 28rem; width: 100%;">
+     <div class="bg-white shadow rounded p-3 input-group-lg">
+      <input type="email" class="form-control my-3" placeholder="Email or phone Number">
+      <input type="password" class="form-control my-3" placeholder="Password">
+      <a href="./feed.html"><button class="btn btn-primary w-100 my-3">Login</button></a>
+      <a href="#" class="text-decoration-none text-center"><p>Forget password?</p></a>
+      <!-- create form -->
+      <hr>
+      <div class="text-center my-4">
+        <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#createModal">Creat new account</button>
+      </div>
+       <!-- create modal -->
+         <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- head -->
+                  <div class="modal-header">
+                    <div>
+                      <h2 class="modal-title" id="createModalLabel">Sign up</h2>
+                      <p class="text-muted fs-7">It's quick and easy.</p>
+                    </div>                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- body -->
+                  <div class="modal-body">
+                    <form>
+                      <!-- name -->
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First-name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="second-name">
+                        </div>
+                      </div>
+                      <!-- email and pass -->
+                      <input type="email" class="form-control my-3" placeholder="Phone Number or Email">
+                      <input type="password" class="form-control my-3" placeholder="New password">
+                      <!-- dob -->
+                      <div class="row my-3">
+                        <span class="text-muted fs-7">Date of birth <i type="button" class="fa-solid fa-circle-question"  data-bs-container="body"  data-bs-toggle="popover" data-bs-placement="right" data-bs-content="lorem ipsum dolor sit amet consectetour."></i></span>
+                        <div class="col mt-3">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col mt-3">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <div class="col mt-3">
+                          <select class="form-select">
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- gender -->
+                      <div class="row my-3">
+                        <span class="text-muted fs-7">Gender <i type="button" class="fa-solid fa-circle-question"  data-bs-container="body"  data-bs-toggle="popover" data-bs-placement="right" data-bs-content="lorem ipsum dolor sit amet consectetour."></i></span>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <label class="form-check-label" for="flexradioDefault1">
+                              Male
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexradioDefault1" checked>                          
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <label class="form-check-label" for="flexradioDefault2">
+                              Female
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexradioDefault2">                          
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="border rounded p-2">
+                            <label class="form-check-label" for="flexradioDefault3">
+                              Custom
+                            </label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexradioDefault3">                          
+                          </div>
+                        </div>
+                      </div>
+                      <!-- gender select -->
+                      <div class="d-none" id="genderSelector">
+                        <select class="form-select">
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <div class="my-3">
+                          <span class="text-muted fs-7">Your pronoun is visible to everyone.</span>
+                          <input type="text" class="form-control" placeholder="Gender (optional)">
+                        </div>
+                      </div>
+                      <!-- disclaimer -->
+                      <div>
+                        <span class="text-muted fs-7">
+                          Lorem ipsum dolor sit amet consectetur adipisicing.
+                        </span>
+                      </div>
+                      <!-- btn -->
+                      <div class="text-center mt-3">
+                        <button type="button" class="btn btn-success btn-lg" data-bs-dismiss="modal">Sign up</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- footer -->
+                </div>
+              </div>
+            </div>
+             <!-- end -->
+      </div>
+      <div class="text-center my-5 pb-5">
+        <p class="fw-bold"><a href="#" class="text-decoration-none text-dark">Create a page</a> <span class="fw-normal">for a celebrity, band or business.</span></p>
+       </div>
+    </div>
+  </div>
+<!-- footer -->
+<footer class="bg-white p-4 text-muted">
+  <div class="container">
+    <!-- language -->
+    <div class="d-flex flex-wrap">
+      <p class="mx-2 fs-7 mb-0">
+        English(US)
+      </p>
+      <p class="mx-2 fs-7 mb-0">
+        தமிழ்
+      </p>
+      <p class="mx-2 fs-7 mb-0">
+        हिंदी
+      </p>
+      <p class="mx-2 fs-7 mb-0">
+        తెలుగు
+      </p>
+    </div>
+    <hr>
+    <!-- actions -->
+    <div class="d-flex flex-wrap">
+      <p class="mx-2 fs-7 mb-0">
+        Sign up
+      </p>
+      <p class="mx-2 fs-7 mb-0">
+        Login
+      </p>
+      <p class="mx-2 fs-7 mb-0">
+        Messenger
+      </p>
+      <p class="mx-2 fs-7 mb-0">
+        Facebook Lite
+      </p>
+    </div>
+    <!-- copy -->
+    <div class="mt-4 mx-2">
+      Facebook & copy : 2023
+    </div>
+  </div>
+</footer>
+
+  <!-- bootstrap-js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <!--  main-js -->
+ <script src="main.js"></script>
+</body>
+</html>

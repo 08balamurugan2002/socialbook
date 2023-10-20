@@ -1,0 +1,66 @@
+.fs-0{
+  font-size: 4rem;
+}
+.fs-7{
+  font-size: 0.8rem;
+}
+.bg-gray{
+  background-color: #f0f2f5;
+}
+.nav__btn button:hover {
+  background: #f0f2f5 !important;
+}
+.nav__btn button:hover i{
+  color: #0d6efd !important;
+}
+.nav__btn-active i{
+  color: #0d6efd !important;
+}
+.nav__btn-active {
+ position: relative;
+}
+.nav__btn-active::before {
+ content: '';
+ position: absolute;
+ bottom: -0.5px;
+ left: 0;
+ transform: translateY(0.5px);
+ width: 100%;
+ height: 3px;
+ border-bottom: 3px solid #0d6efd !important;
+}
+/* sidebar scroll */
+.scrollbar:hover {
+  overflow: auto !important;
+}
+/* default light theme */
+body {
+  background-color: #f0f2f5;
+  
+}
+/* default light theme */
+body.dark-mode {
+  background-color: #333;
+  color: white !important;
+}
+/* tooltip */
+.custom-tooltip .tooltip-inner {
+  background-color: white;
+  color: #747474;
+}
+/* storeis */
+.story:hover {
+  opacity: 0.8;
+}
+.post__comment .accordion-button::after {
+  margin-left: 0 !important;
+  display: none !important;
+}
+.post__comment .accordion-button:hover {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.post__comment .accordion-button:not(.collapse) {
+  background: transparent !important;
+  box-shadow: none !important;
+}
